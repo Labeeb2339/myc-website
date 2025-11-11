@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYC — Miri Youth Community</title>
+  <meta name="description" content="MYC — Miri Youth Community. Countdown to Season 1 and join the hype." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="logo" aria-label="MYC Home">
+        <span class="logo__mark">MYC</span>
+        <span class="logo__sub">Miri Youth Community</span>
+      </a>
+      <nav class="menu">
+        <a href="#events">Events</a>
+        <a href="#mcreds">MCreds</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero / Countdown -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__left">
+          <h1 class="headline">Season 1<br><span class="neon">Launch Countdown</span></h1>
+          <p class="tagline">We go live on <strong>January 1</strong>. Get ready for bold energy, neon vibes, and community power.</p>
+
+          <div class="countdown" aria-live="polite">
+            <div class="timebox"><span id="days">00</span><label>Days</label></div>
+            <div class="timebox"><span id="hours">00</span><label>Hours</label></div>
+            <div class="timebox"><span id="minutes">00</span><label>Minutes</label></div>
+            <div class="timebox"><span id="seconds">00</span><label>Seconds</label></div>
+          </div>
+
+          <div class="cta__row">
+            <button id="joinBtn" class="btn btn--primary" disabled title="Available on January 1">Join MYC</button>
+            <a href="#events" class="btn btn--ghost">See Events</a>
+          </div>
+          <p id="joinHint" class="hint">Join unlocks on <strong>Jan 1</strong>. Check back then ✨</p>
+        </div>
+
+        <div class="hero__right">
+          <div class="poster">
+            <div class="poster__visual" aria-hidden="true"></div>
+            <div class="poster__text">NEON
+STREET
+WEAR
+VIBES</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="section">
+      <div class="container">
+        <h2 class="section__title">Upcoming <span class="neon">Events</span></h2>
+        <p class="section__desc">We’ll reveal the full Season 1 lineup soon. Placeholders below.</p>
+        <div id="eventsGrid" class="cards"></div>
+      </div>
+    </section>
+
+    <!-- MCreds -->
+    <section id="mcreds" class="section alt">
+      <div class="container">
+        <h2 class="section__title">What Are <span class="neon">MCreds</span>?</h2>
+        <div class="split">
+          <div>
+            <p class="lead">MCreds are our participation credits. Show up, help out, create something — earn MCreds. Trade them for perks: early access, limited merch, stage time & more.</p>
+            <ul class="list">
+              <li><strong>Earn</strong>: attend events, volunteer, submit projects</li>
+              <li><strong>Level up</strong>: stack MCreds to unlock tiers</li>
+              <li><strong>Redeem</strong>: swap for perks, workshops, collab slots</li>
+            </ul>
+          </div>
+          <div class="card card--glow">
+            <h3 class="card__title">Season 1 Perks</h3>
+            <ul class="perklist">
+              <li>Fast-lane event check-in</li>
+              <li>Exclusive neon sticker pack</li>
+              <li>Workshop priority seating</li>
+              <li>Feature on MYC socials</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2 class="section__title">FAQ</h2>
+        <details class="faq">
+          <summary>When does the Join button unlock?</summary>
+          <p>At local midnight on January 1 (your device time). When the countdown hits zero, the button glows and unlocks.</p>
+        </details>
+        <details class="faq">
+          <summary>Do I need an account?</summary>
+          <p>On Jan 1, clicking Join opens a simple form. You can add your name, school, and interests — no account required.</p>
+        </details>
+        <details class="faq">
+          <summary>Where are events hosted?</summary>
+          <p>Miri, with occasional collabs across Sarawak. Locations appear on each event card.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> MYC — Miri Youth Community</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
